@@ -3,8 +3,9 @@ execute as @e[tag=!UUIDsavedTrident,type=trident,nbt={Trident:{tag:{enderfork:1b
 
 function enderfork:ammo/ammo_transfering
 
-execute as @e[type=trident, nbt={inGround:1b,Trident:{tag:{enderfork:1b, enderfork_active:1b, enderfork_loaded:1b}}}] at @s run function enderfork:main/try_teleport
+execute as @e[type=trident,nbt={inGround:1b,Trident:{tag:{enderfork:1b, enderfork_active:1b, enderfork_loaded:1b}}}] at @s run function enderfork:main/check_teleport
+execute as @e[type=trident,nbt={inGround:1b,Trident:{tag:{enderfork:1b, enderfork_active:1b}}}] run function enderfork:main/trident_deactivate
+
 
 item modify entity @a[nbt={SelectedItem:{tag:{enderfork:1b, enderfork_active:0b}}}] weapon.mainhand enderfork:trident_activate
-
 execute as @a[nbt={SelectedItem:{tag:{enderfork:1b}}}] run function enderfork:main/trident_lore
