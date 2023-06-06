@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Teleportation",
+        "color": "#9c9d97",
+        "italic": false
+      },
+      {
+        "text": "Ender Energy ",
+        "color": "#138743",
+        "bold": false,
+        "italic": false,
+        "extra": [
+          {
+            "text": "[",
+            "color": "#138743",
+            "bold": true,
+            "italic": false,
+            "extra": [
+              {
+                "score": {
+                  "name": "@s",
+                  "objective": "EnderforkAmmo"
+                },
+                "color": "#138743",
+                "bold": true,
+                "italic": false,
+                "extra": [
+                  {
+                    "text": "]",
+                    "color": "#138743",
+                    "bold": true,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "replace": true
+  }
+]
