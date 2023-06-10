@@ -1,6 +1,7 @@
 execute as @a[tag=!UUIDsaved] run function enderfork:uuid-save/uuid_save_player
 execute as @e[tag=!UUIDsavedTrident,type=trident,nbt={Trident:{tag:{enderfork:1b}}}] run function enderfork:uuid-save/uuid_save_trident
 
+function enderfork:craft/check_tridents
 function enderfork:ammo/ammo_transfering
 
 execute as @e[type=trident,nbt={inGround:1b,Trident:{tag:{enderfork:1b, enderfork_active:1b, enderfork_loaded:1b}}}] at @s run function enderfork:main/check_teleport

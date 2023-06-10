@@ -4,3 +4,5 @@ scoreboard objectives add UUID3 dummy
 scoreboard objectives add UUID4 dummy
 
 scoreboard objectives add EnderforkAmmo dummy
+
+scoreboard objectives add variables dummy
